@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Bootstrap Tables & Sizing</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <!-- w-25 => parent of %25 width -->
+
+    <div class="bg-success mb-2 p-4 w-25"></div>
+    <div class="bg-success mb-2 p-4 w-50"></div>
+    <div class="bg-success mb-2 p-4 w-75"></div>
+    <div class="bg-success mb-2 p-4 w-100"></div>
+
+
+    <!-- block it will put under another.  d-inline-block to put side by side  to give height and width -->
+
+    <div style="height:400px" class="bg-warning">
+        <div class="bg-primary d-inline-block p-4 h-25"></div>
+        <div class="bg-primary d-inline-block p-4 h-50"></div>
+        <div class="bg-primary d-inline-block p-4 h-75"></div>
+        <div class="bg-primary d-inline-block p-4 h-100"></div>        
+    </div>
+
+    <br><br>
+
+    <!-- first => with no class -->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Helen</td>
+                <td>info@helen.com</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nec</td>
+                <td>info@nec.com</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>info@mark.com</td>
+                <td>Berlin</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ethan</td>
+                <td>info@ethan.com</td>
+                <td>Barcelona</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- first   table-primary  then  success    -->
+
+    <table class="table table-success">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Helen</td>
+                <td>info@helen.com</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nec</td>
+                <td>info@nec.com</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>info@mark.com</td>
+                <td>Berlin</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ethan</td>
+                <td>info@ethan.com</td>
+                <td>Barcelona</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table">
+        <thead>
+            <tr class="table-secondary">
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Helen</td>
+                <td>info@helen.com</td>
+                <td>London</td>
+            </tr>
+            <tr class="table-success">
+                <td>2</td>
+                <td>Nec</td>
+                <td>info@nec.com</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>info@mark.com</td>
+                <td>Berlin</td>
+            </tr>
+            <tr >
+                <td>4</td>
+                <td>Ethan</td>
+                <td class="table-danger">info@ethan.com</td>
+                <td>Barcelona</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- first   striped for boldness row   - then hover -->
+
+     <!-- <table class="table table-success table-bordered"> -->
+
+    <!-- <table class="table table-success table-bordered 
+        
+        border-primary"> -->
+
+        <!-- table-borderless  for no border -->
+    
+    <table class="table table-primary table-striped table-hover"> 
+
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Helen</td>
+                <td>info@helen.com</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nec</td>
+                <td>info@nec.com</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>info@mark.com</td>
+                <td>Berlin</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ethan</td>
+                <td>info@ethan.com</td>
+                <td>Barcelona</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table table-sm ">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Helen</td>
+                <td>info@helen.com</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nec</td>
+                <td>info@nec.com</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>info@mark.com</td>
+                <td>Berlin</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ethan</td>
+                <td>info@ethan.com</td>
+                <td>Barcelona</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- first   without  table-responsive -->
+
+    <div class="table-responsive">
+        <table class="table table-sm ">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Helen</td>
+                    <td>info@helen.com</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                    <td>London</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nec</td>
+                    <td>info@nec.com</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                    <td>Paris</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mark</td>
+                    <td>info@mark.com</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                    <td>Berlin</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ethan</td>
+                    <td>info@ethan.com</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                    <td>Barcelona</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>
