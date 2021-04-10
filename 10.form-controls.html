@@ -33,17 +33,34 @@
     </div>
     <div class="mb-3">
         <label for="name" class="form-label">Username</label>
-        <input type="text" name="surname" value="sadikturan" class="form-control-plaintext" readonly>
+        <input type="text" name="surname" value="Ethan" class="form-control-plaintext" readonly>
     </div>
+
+    <!-- Disabled
+    Add the disabled boolean attribute on an input to give it 
+    a grayed-out appearance and remove pointer events. -->
+
+    <!-- Readonly
+    Add the readonly boolean attribute on an input to prevent 
+    modification of the input’s value. Read-only inputs appear 
+    lighter (just like disabled inputs), but retain the 
+    standard cursor. -->
+
+    <div>
+        <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+        <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+    </div>
+
+    <br><br>
 
     <div class="mb-3">
         <label for="cities" class="form-label">Cities</label>
         <input type="text" list="cityList" class="form-control" placeholder="Type...">
         <datalist id="cityList">
-            <option value="Kocaeli"></option>
+            <option value="London"></option>
+            <option value="Paris"></option>
+            <option value="Barcelona"></option>
             <option value="İstanbul"></option>
-            <option value="Ankara"></option>
-            <option value="Rize"></option>
         </datalist>
     </div>
 
@@ -67,6 +84,9 @@
         </select>
     </div>
 
+    <!-- multiple => birden fazla seçim yapma ctrl tuşuna basarak -->
+    <!-- size="3"  =>  kaç tanesi gözüksün -->
+
     <div class="mb-3">
         <label for="cities" class="form-label">Cities</label>
         <select class="form-select form-select-lg" size="3" multiple>
@@ -85,6 +105,12 @@
         </label>
     </div>
 
+    <br><br>
+    
+    <div>
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
