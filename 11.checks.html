@@ -11,6 +11,8 @@
   </head>
   <body>
 
+    <!-- <input type="checkbox" name="" id=""> -->
+
     <div class="form-check">
         <input type="checkbox" name="" id="ch1" class="form-check-input">
         <label for="ch1" class="form-check-label">Default Checkbox</label>
@@ -28,6 +30,8 @@
 
     <br><br>
 
+    <!-- Aynı grup içinde sadece birini seçebilmek için   name="rd"   hepsine de -->
+
     <div class="form-check">
         <input type="radio" name="rd" id="rd1" class="form-check-input">
         <label for="rd1" class="form-check-label">Default Radio</label>
@@ -38,14 +42,16 @@
         <label for="rd2" class="form-check-label">Default Radio</label>
     </div> 
 
+    <hr>
+
     <div class="form-check">
-        <input type="radio" name="rd2" id="rd1" class="form-check-input" disabled>
-        <label for="rd1" class="form-check-label">Default Radio</label>
+        <input type="radio" name="rd2" id="rd3" class="form-check-input" disabled>
+        <label for="rd3" class="form-check-label">Default Radio</label>
     </div> 
 
     <div class="form-check">
-        <input type="radio" name="rd2" id="rd2" class="form-check-input" checked disabled>
-        <label for="rd2" class="form-check-label">Default Radio</label>
+        <input type="radio" name="rd2" id="rd4" class="form-check-input" checked disabled>
+        <label for="rd4" class="form-check-label">Default Radio</label>
     </div> 
 
     <br><br>
@@ -60,39 +66,39 @@
         <label for="sw2" class="form-check-label">Switch Checkbox</label>
     </div> 
 
+    <hr>
+
     <div class="form-check form-switch">
-        <input type="checkbox" name="" id="sw1" class="form-check-input" disabled>
-        <label for="sw1" class="form-check-label">Switch Checkbox</label>
+        <input type="checkbox" name="" id="sw3" class="form-check-input" disabled>
+        <label for="sw3" class="form-check-label">Switch Checkbox</label>
     </div> 
 
     <div class="form-check form-switch">
-        <input type="checkbox" name="" id="sw2" class="form-check-input" checked disabled>
-        <label for="sw2" class="form-check-label">Switch Checkbox</label>
+        <input type="checkbox" name="" id="sw4" class="form-check-input" checked disabled>
+        <label for="sw4" class="form-check-label">Switch Checkbox</label>
     </div> 
 
     <br><br>
 
-    <div class="form-check form-check-inline">
-        <input type="checkbox" name="" id="ch4" class="form-check-input">
-        <label for="ch4" class="form-check-label">Default Checkbox</label>
-    </div> 
+    <hr>
+
+    <!-- yan yana koyma    INLINE   -->
+
+    <!-- type= "checkbox"   =>   radio   daire yap     -->
 
     <div class="form-check form-check-inline">
-        <input type="checkbox" name="" id="ch5" class="form-check-input" checked>
-        <label for="ch5" class="form-check-label">Default Checkbox</label>
-    </div> 
-
-    <br><br>
-
+        <input class="form-check-input" type="checkbox" id="inline1" value="option1">
+        <label class="form-check-label" for="inline1">1</label>
+    </div>
     <div class="form-check form-check-inline">
-        <input type="radio" name="rd3" id="rd5" class="form-check-input">
-        <label for="rd5" class="form-check-label">Default Checkbox</label>
-    </div> 
-
+        <input class="form-check-input" type="checkbox" id="inline2" value="option2">
+        <label class="form-check-label" for="inline2">2</label>
+    </div>
     <div class="form-check form-check-inline">
-        <input type="radio" name="rd3" id="rd6" class="form-check-input" checked>
-        <label for="rd6" class="form-check-label">Default Checkbox</label>
-    </div> 
+        <input class="form-check-input" type="checkbox" id="inline3" value="option3" disabled>
+        <label class="form-check-label" for="inline3">3 (disabled)</label>
+    </div>
+
 
     <br><br>
 
@@ -106,18 +112,22 @@
         <label for="btn-check2" class="btn btn-outline-primary">Single Toggle</label>
     </p>
 
-    <p>
-        <div class="btn-group">
-            <input type="radio" name="options" class="btn-check" id="option1" autocomplete="off" checked>
-            <label for="option1" class="btn btn-danger">Checked</label>
+   
+    <div class="btn-group">
+        <input type="radio" name="options" class="btn-check" id="option1" autocomplete="off" checked>
+        <label for="option1" class="btn btn-danger">Checked</label>
 
-            <input type="radio" name="options"  class="btn-check" id="option2" autocomplete="off">
-            <label for="option2" class="btn btn-danger">Radio</label>
+        <input type="radio" name="options"  class="btn-check" id="option2" autocomplete="off">
+        <label for="option2" class="btn btn-danger">Radio</label>
 
-            <input type="radio" name="options" class="btn-check" id="option3" autocomplete="off">
-            <label for="option3" class="btn btn-danger">Radio</label>
-        </div>
-    </p>
+        <input type="radio" name="options" class="btn-check" id="option3" autocomplete="off">
+        <label for="option3" class="btn btn-danger">Radio</label>
+    </div>
+    
+
+    <hr>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
